@@ -1,0 +1,41 @@
+﻿<Window x:Class="Catalog.UI.TeamDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Catalog.UI"
+        mc:Ignorable="d"
+        Title="TeamDetails" Height="340" Width="250">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Content="Team name:"/>
+        <TextBox Name="tbx_name" Grid.Row="0" Width="120" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,5,10,5"/>
+        <Label Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Content="Country:"/>
+        <TextBox Name="tbx_country" Grid.Row="1" Width="120" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,5,10,5"/>
+        <Label Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Content="Foundation year:"/>
+        <TextBox Name="tbx_year" Grid.Row="2" Width="120" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,5,10,5"/>
+        <Label Grid.Row="3" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,0,0,0" Content="Our players:"/>
+
+        <ListBox Name="lbox_playersList" Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Left" SelectionMode="Single" Width ="200" Height="100" Margin="10,10,10,10">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <TextBlock Text="{Binding Name}"></TextBlock>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button Name="btn_select" Grid.Row="5" Grid.ColumnSpan="2" Width="120" Height="20" VerticalAlignment="Center" HorizontalAlignment="Center" Background="LightGray" Content="Add player" Click="btn_select_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,5 @@
+C:\Users\dev1\Desktop\Catalog\Catalog\Catalog.Core\bin\Debug\Catalog.Core.dll
+C:\Users\dev1\Desktop\Catalog\Catalog\Catalog.Core\bin\Debug\Catalog.Core.pdb
+C:\Users\dev1\Desktop\Catalog\Catalog\Catalog.Core\obj\Debug\Catalog.Core.csprojResolveAssemblyReference.cache
+C:\Users\dev1\Desktop\Catalog\Catalog\Catalog.Core\obj\Debug\Catalog.Core.dll
+C:\Users\dev1\Desktop\Catalog\Catalog\Catalog.Core\obj\Debug\Catalog.Core.pdb
