@@ -41,7 +41,7 @@ namespace Catalog.UI
         private void btn_select_Click(object sender, RoutedEventArgs e)
         {
             PlayerAddWindow win = new PlayerAddWindow(DataProvider);
-            if(win.ShowDialog().Value == true)
+            if(win.ShowDialog().Value == true && win.SelectedPerson != null)
             {
                 Person newMember = DataProvider.People.FirstOrDefault(x => x.Name == win.SelectedPerson.Name);
                 newMember.Team = thisTem;
